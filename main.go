@@ -35,7 +35,7 @@ fmt.Println("Would you like to purchase a thing? 'y' for yes 'n' for no.")
 
  if shopping == "y" {
 
- for items := 1; shopping == "y" || shopping == "Y"; items ++ {
+ for items := 1; shopping == "y"; items ++ {
 
  var selection int
 
