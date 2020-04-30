@@ -12,7 +12,7 @@ type Inventory struct {
 
 func main() {
 
-//Read from a file and create an array of Inventory
+//Read from a file and create an array of Inventory 'didn't figure out how to read it from a file yet.'
 
 var Thing [10]Inventory
 
