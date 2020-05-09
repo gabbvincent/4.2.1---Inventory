@@ -1,3 +1,8 @@
+//Programmer Name: Vincent G.
+//Date completed: 05/08/2020
+//Description: Inventory (3 points)
+
+
 package main
 
 import "fmt"
