@@ -1,6 +1,6 @@
 //Programmer Name: Vincent G.
 //Date completed: 05/08/2020
-//Description: Inventory (3 points)
+//Description: Inventory (3 points) 4.2.1 Structs
 
 
 package main
