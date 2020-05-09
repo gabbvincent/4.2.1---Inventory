@@ -12,7 +12,7 @@ type Inventory struct {
 
 func main() {
 
-//Read from a file and create an array of Inventory 'didn't figure out how to read it from a file yet.'
+//Use the main to manipulate the inventory when a user "purchases" an item.
 
 var Thing [10]Inventory
 
@@ -21,17 +21,16 @@ Thing[i] = Inventory{Partnumber: i, Name: "Thing", Unitprice: 1.99, Quantity: 10
 }
 
   for i := 0; i <= 9; i++{
-    fmt.Println(Thing[i])
+    fmt.Println("Part#:", Thing[i].Partnumber, "Name:", Thing[i].Name, "Unitprice: $", Thing[i].Unitprice, "Quantity:", Thing[i].Quantity)
 }
-fmt.Println()
 
-//Use the main to manipulate the inventory when a user "purchases" an item.
+fmt.Println()
 
 var shopping string
 
 fmt.Println("Would you like to purchase a thing? 'y' for yes 'n' for no.")
+
  fmt.Scanln(&shopping)
- 
 
  if shopping == "y" {
 
@@ -39,22 +38,23 @@ fmt.Println("Would you like to purchase a thing? 'y' for yes 'n' for no.")
 
  var selection int
 
- fmt.Println("[Enter the item number of the Thing you'd like to 'purchase']")
+ fmt.Println("[Enter the Part# of the Thing you'd like to 'purchase']")
 
  fmt.Scanln(&selection)
+ 
  Thing[selection].Quantity --
-  
-
+ 
  for i := 0; i <= 9; i++{
-    fmt.Println(Thing[i])
+
+    fmt.Println("Part#:", Thing[i].Partnumber, "Name:", Thing[i].Name, "Unitprice: $", Thing[i].Unitprice, "Quantity:", Thing[i].Quantity)
    }
-   fmt.Println()
-   
-   fmt.Println("You have purchased",items, "things, would you like to continue shopping?")
+
+   fmt.Println("Would you like to continue shopping?")
 
    fmt.Println("'y' for yes 'n' for no")
+
    fmt.Scanln(&shopping)
 
   }
- }
+ } 
 }
